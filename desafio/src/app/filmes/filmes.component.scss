@@ -1,0 +1,76 @@
+main {
+    max-width: 1220px;
+    margin: auto;
+}
+
+.video {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.reforco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-end;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.p_filmes{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    width: 400px;
+    height: 58px;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+select{
+    width: 400px;
+    height: 58px;
+    border: 1px solid #000000;
+}
+
+button{
+    width: 180px;
+    height: 58px;
+    background: #F6511D;
+    color: #FFFFFF;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 86px;
+    align-items: center;
+}
+
+.editar{
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.excluir{
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,33 @@
+footer{
+    margin-top: 50px;
+    background: #F6511D;
+    width: 100%;
+    height: 250px;
+}
+
+.gerais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.filme{
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ordem{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFCFC;
+}
+
+.linha{
+    width: 2px; 
+    height: 75%;
+    background-color: #FFFCFC;
+}
+
