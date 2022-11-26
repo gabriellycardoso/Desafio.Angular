@@ -36,9 +36,18 @@ button{
 .ajustes_gerais{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 70px;
     margin-bottom: 80px;
+    flex-direction: column;
+}
+
+.laura{
+   display: flex;
+   justify-content: space-around;
+}
+
+.texto{
+    width: 309px;
 }
 .nomes{
     font-family: 'Roboto', sans-serif;

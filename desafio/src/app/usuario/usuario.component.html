@@ -1,56 +1,38 @@
 <app-header></app-header>
 <main>
     <p class="p_cadastro">Cadastro</p>
+<form [formGroup]="form">
     <div class="informacoes">
         <div>
             <p>Nome</p>
-            <input id="text">
+            <input id="text" formControlName="nome">
         </div>
         <div>
             <p>E-mail</p>
-            <input id="text">
+            <input id="text" formControlName="email">
         </div>
         <div>
             <p>Telefone</p>
-            <input id="text">
+            <input id="text" formControlName="telefone">
         </div>
     </div>
-    <a><button>Cadastrar</button></a>
+</form>
+    <a><button (click)="salvarDadosUsuario()"*ngIf="!verificarEditar">Cadastrar</button></a>
+    <a><button (click)="EditarCliente1()"*ngIf="verificarEditar">Editar</button></a>
     <div class="ajustes_gerais">
-        <div class="nomes">
-            <P>Paulo Andre</P>
-            <br>
-            <P>Marcos Lucio</P>
-            <br>
-            <P>Laura Port</P>
-        </div>
-        <div class="e-mail">
-            <p>paulo@email.com</p>
-            <br>
-            <p>marcos@email.com</p>
-            <br>
-            <p>laura@email.com</p>
-        </div>
-        <div>
-            <p>3349 6788</p>
-            <br>
-            <p>3349 6788</p>
-            <br>
-            <p>3349 6788</p>
-        </div>
-        <div>
-            <a><button class="editar">Editar</button></a>
-            <br>
-            <a><button class="editar">Editar</button></a>
-            <br>
-            <a><button class="editar">Editar</button></a>
-        </div>
-        <div>
-            <a><button class="excluir">Excluir</button></a>
-            <br>
-            <a><button class="excluir">Excluir</button></a>
-            <br>
-            <a><button class="excluir">Excluir</button></a>
+        <div class="laura" *ngFor="let item of usuariosGeral; index as i;">
+            <P class="texto">{{item.nome}}</P>
+            <p class="texto">{{item.email}}</p>
+            <p class="texto">{{item.telefone}}</p>
+            <a><button (click)="EditarCliente2(item)" class="editar">Editar</button></a>
+            <a><button class="excluir" [swal]="{
+                title: 'Deseja mesmo exluir esse dado?', 
+                text: 'Deseja realmente exluir o produto?: ' + item.nome + '?',
+                showDenyButton: true,
+                denyButtonText: 'Não',
+                confirmButtonText: 'Sim, excluir',
+                icon: 'warning'
+            }" (confirm)="excluirDadosUsuario(item.id)">Excluir</button></a>
         </div>
     </div>
 </main>

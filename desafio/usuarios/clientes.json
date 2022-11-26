@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Fernanda2",
+      "email": "fulano@email",
+      "telefone": "40749976"
+    },
+    {
+      "id": 2,
+      "nome": "Roberto",
+      "email": "fulano@email",
+      "telefone": "40749976"
+    },
+    {
+      "id": 3,
+      "nome": "Fulano",
+      "email": "aghashg",
+      "telefone": "00000"
+    }
+  ]
+}
